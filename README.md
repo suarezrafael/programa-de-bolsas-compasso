@@ -14,7 +14,7 @@ Requisitos funcionais e não funcionais
  * Encerrar pedido ao informar código do produto 999;
  * Após encerrar pedido, imprimir a lista de itens do pedido em formato JSON( utilize a classe JavaScriptSerializer() )
 
-2 -Requisitos não funcionais
+2 - Requisitos não funcionais
 
   * C#;
   * Criar classes em arquivos .cs separados.
@@ -34,14 +34,15 @@ Requisitos funcionais e não funcionais
   * Após encerrar pedido, imprimir a lista de itens do pedido em formato JSON( utilize a classe JavaScriptSerializer() )
 
 
-/////O cardápio automatizado de uma lancheria/////
-// Quando o usuário abrir o sistema, mostrar a seguinte informação
-///Entrada :
+- O cardápio automatizado de uma lancheria
+  - Quando o usuário abrir o sistema, mostrar a seguinte informação
+  - Entrada :
 
+```
 Qual o numero da mesa ?: XX
 Qual  o item (Codigo) do pedido abaixo? 
 
-///Entrada em loop :
+- Entrada em loop :
 Código  Produto                   Preço Unitário (R$)
 100       Cachorro quente     R$  5,70
 101       X Completo          R$ 18,30
@@ -54,17 +55,23 @@ Código  Produto                   Preço Unitário (R$)
 Codigo:XX
 Quantidade:XX
 
-// Quando o usuário digitar 999, encerrar pedido e mostrar saída
+```
+- Quando o usuário digitar 999, encerrar pedido e mostrar saída
 
+```
 ///Saida 1:
+
 A mesa XXX pediu os seguintes itens:
  1 - Cachorro quebte
  2 - X Completo
 Com valor total de R$: 60,6
 
-// Imprimir items do pedido em json. 
+```
 /// Saída 2
+// Imprimir items do pedido em json. 
 
+```json
+          
 { "ValorTotal" : 60.6,
   "Itens" : [
     { "Codigo" : 100,
@@ -75,5 +82,57 @@ Com valor total de R$: 60,6
     }    
 ]}
 
+```
+# Exemplos
 
-# Exemplo 
+- menu Principal
+
+```
+   
+        static void Main(string[] args)
+        {
+            bool exibeMenu = true;
+            while (exibeMenu)
+            {
+                exibeMenu = Menu();
+            }
+        }
+
+        private static bool Menu()
+        {
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Red;
+
+            Console.Write("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ PEDIDOS ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("╔═════════════════MENU DE OPÇÕES════════════════╗    ");
+            Console.WriteLine("║ 1 EFETUAR PEDIDO                              ║    ");
+            Console.WriteLine("║ 2 SAIR                                        ║    ");
+            Console.WriteLine("╚═══════════════════════════════════════════════╝    ");
+
+            Console.WriteLine(" ");
+            Console.Write("DIGITE UMA OPÇÃO : ");
+            var leitura = Console.ReadLine();
+
+           switch (Console.ReadLine())
+            {
+                case "1":
+                    Pedido();
+                    return true;
+                case "2":
+                    return false;
+                default:
+                    return true;
+            }
+        }
+
+        private static void Pedido()
+        {
+            Console.Clear();
+            Console.WriteLine("Pedido");
+
+            // TODO
+ 
+        }        
+
+```
