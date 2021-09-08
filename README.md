@@ -9,7 +9,7 @@ Requisitos funcionais e não funcionais
 
  * O usuário deve informar o numero da mesa;
  * As opções do cardápio devem aparecer;
- * As mesas aceitas são: 1, 2, 3 e 4. Validar mesa inválida;
+ * As mesas aceitas são: 1, 2, 3 e 4. Validar mesa inválida, e solicitar novamente a mesa;
  * Validar código de produto valido na lista de produtos(consultar via linq);
  * Encerrar pedido ao informar código do produto 999;
  * Após encerrar pedido, imprimir a lista de itens do pedido em formato JSON( utilize a classe JavaScriptSerializer() )
@@ -35,7 +35,7 @@ Requisitos funcionais e não funcionais
 
 
 - O cardápio automatizado de uma lancheria
-  - Quando o usuário abrir o sistema, mostrar a seguinte informação
+  - Quando o usuário abrir o sistema, mostrar o menu de exemplo e ao escolher a entrada abaixo
   - Entrada :
 
 ```
@@ -52,8 +52,8 @@ Código  Produto                   Preço Unitário (R$)
 105       Refrigerante        R$  1,00
 999       Encerra pedido
 
-Codigo:XX
-Quantidade:XX
+Informe o Codigo: XX
+Informe a Quantidade:XX
 
 ```
 - Quando o usuário digitar 999, encerrar pedido e mostrar saída
