@@ -29,7 +29,7 @@ Requisitos funcionais e não funcionais
     - Cardapio
       - Lista de Produto
 
-  * Utilizar array de para armazenar lista de mesas;
+  * Utilizar array para armazenar lista de mesas;
   * Utilizar Lista de para armazenar lista de cardápio de produtos e preços;
   * Após encerrar pedido, imprimir a lista de itens do pedido em formato JSON( utilize a classe JavaScriptSerializer() )
 
