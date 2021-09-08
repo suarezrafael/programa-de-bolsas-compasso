@@ -21,13 +21,13 @@ Requisitos funcionais e não funcionais
   * Classes:
     - Pedido
       - Valor Total
-      - Lista<Produto>
+      - Lista de Produto
     - Produto
       - Codigo
       - Descricao
       - ValorUnitario      
     - Cardapio
-      - Lista<Produto>
+      - Lista de Produto
 
   * Utilizar array de para armazenar lista de mesas;
   * Utilizar Lista de para armazenar lista de cardápio de produtos e preços;
