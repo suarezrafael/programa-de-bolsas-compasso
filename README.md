@@ -103,7 +103,8 @@ Com valor total de R$: 60,6
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Red;
 
-            Console.Write("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ PEDIDOS ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒");
+                Console.Write("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ PEDIDOS ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒");
+            Console.WriteLine(" ");
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("╔═════════════════MENU DE OPÇÕES════════════════╗    ");
             Console.WriteLine("║ 1 EFETUAR PEDIDO                              ║    ");
@@ -112,10 +113,9 @@ Com valor total de R$: 60,6
 
             Console.WriteLine(" ");
             Console.Write("DIGITE UMA OPÇÃO : ");
-            var leitura = Console.ReadLine();
-
-           switch (Console.ReadLine())
-            {
+            
+            switch (Console.ReadLine())
+             {
                 case "1":
                     Pedido();
                     return true;
@@ -132,7 +132,9 @@ Com valor total de R$: 60,6
             Console.WriteLine("Pedido");
 
             // TODO
- 
-        }        
+            Console.Write("Pressione uma tecla para continuar...");
+            Console.ReadKey();
+        } 
+    }      
 
 ```
