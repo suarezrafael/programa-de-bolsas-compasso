@@ -1,5 +1,5 @@
 # programa-de-bolsas-compasso
-Exercicios Programa de bolsas .Net
+Exercícios Programa de bolsas .Net
 
  # Sugestão atividade 1 Sprint 3
 
@@ -7,12 +7,12 @@ Requisitos funcionais e não funcionais
 
 1 - Requisitos Funcionais:
 
- * O usuário deve informar o numero da mesa;
- * As opções do cardápio devem aparecer;
+ * O usuário deve informar o número da mesa;
+ * As opções do cardápio devem ser exibidas formatadas;
  * As mesas aceitas são: 1, 2, 3 e 4. Validar mesa inválida, e solicitar novamente a mesa;
- * Validar código de produto valido na lista de produtos(consultar via linq);
- * Encerrar pedido ao informar código do produto 999;
- * Após encerrar pedido, imprimir a lista de itens do pedido em formato JSON( utilize a classe JavaScriptSerializer() )
+ * Validar código de produto válido na lista de produtos(consultar via linq na lista de produtos);
+ * Finalizar pedido ao informar código do produto 999;
+ * Após finalizar pedido, imprimir a lista de itens do pedido em formato JSON( utilize a classe JavaScriptSerializer() )
 
 2 - Requisitos não funcionais
 
@@ -29,14 +29,15 @@ Requisitos funcionais e não funcionais
     - Cardapio
       - Lista de Produto
 
-  * Utilizar array para armazenar lista de mesas;
-  * Utilizar Lista de para armazenar lista de cardápio de produtos e preços;
+  * Utilizar array para armazenar lista de mesas aceitas(1,2,3,4);
+  * Utilizar Lista do objeto Produto para armazenar lista de cardápio de produtos e preços;
   * Após encerrar pedido, imprimir a lista de itens do pedido em formato JSON( utilize a classe JavaScriptSerializer() )
 
 
-- O cardápio automatizado de uma lancheria
-  - Quando o usuário abrir o sistema, mostrar o menu de exemplo e ao escolher a entrada abaixo
-  - Entrada :
+3 - Descrição da tarefa
+    - O cardápio automatizado de uma lancheria
+      - Quando o usuário abrir o sistema, mostrar o menu de exemplo(mais abaixo) e ao escolher a entrada abaixo:
+      - Entrada :
 
 ```
 Qual o numero da mesa ?: XX
