@@ -5,6 +5,8 @@ Exercícios Programa de bolsas .Net
 
 Requisitos funcionais e não funcionais
 
+Desenvolver um pedido e cardápio digital de uma lancheira.
+
 1 - Requisitos Funcionais:
 
  * O usuário deve informar o número da mesa;
